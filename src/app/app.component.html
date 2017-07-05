@@ -1,20 +1,16 @@
 <!--The whole content below can be removed with the new code.-->
-<h3> I'm in the AppComponent </h3>
-<hr>
-<app-servers></app-servers>
 
-<button class="btn btn-primary" 
+   <app-header></app-header>
+<div class="container">
+ 
+    <app-recipe></app-recipe>
+<app-shopping-list></app-shopping-list>
+    
+    
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-primary">I'm working!</h2>
+        </div>
+    </div>
+</div>
 
-(click)="displayDetails()">Display Details</button>
-
-<p *ngIf="display">
-These are the details. They are very detailed.
-
-</p>
-<ul>
-<li *ngFor="let click of clicks"
-[ngStyle]="{backgroundColor: click > 4 ? 'blue': 'none'}"
-[ngClass]="{white: click > 4}"
-
->{{click}}</li>
-</ul>
