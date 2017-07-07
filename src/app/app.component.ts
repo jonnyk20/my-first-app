@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  
- 
+  tab: string = 'sho';
+  switch() {
+    
+  }
+ onTabSwitched(selection){
+  if (selection == 'Recipes')
+    {this.tab = 'rec';} else {this.tab ='sho'}
+
+ }
+
 }
